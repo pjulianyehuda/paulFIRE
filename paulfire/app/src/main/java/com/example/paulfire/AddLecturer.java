@@ -161,10 +161,7 @@ public class AddLecturer extends AppCompatActivity implements TextWatcher {
         String mid = mDatabase.child("lecturer").push().getKey();
         Lecturer lecturer = new Lecturer(mid, mnama, mgender, mexpertise);
 
-        //kalau hanya seperti ini, kita tidak akan tau apabila terjadi error kecuali kita mengecek di logcat
-        //mDatabase.child("lecturer").child(mid).setValue(lecturer);
 
-        //tambahan pengecek success dan failure untuk melakukan sesuatu apabila error atau berhasil
         mDatabase.child("lecturer").child(mid).setValue(lecturer).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {

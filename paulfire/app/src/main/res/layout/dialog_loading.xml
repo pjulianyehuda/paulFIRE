@@ -5,18 +5,23 @@
     android:id="@+id/cons_dialog_loading"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary">
+    android:background="@color/common_google_signin_btn_text_light_pressed">
 
     <ImageView
         android:id="@+id/img_logo_dialog_loading"
         android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="false"
         android:contentDescription="@string/img"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_android_24" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_directions_run_24" />
 
     <TextView
         android:id="@+id/lbl_dialog_loading"

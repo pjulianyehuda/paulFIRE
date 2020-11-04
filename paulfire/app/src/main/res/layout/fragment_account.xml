@@ -13,7 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:background="@android:color/holo_red_light"
+        android:background="@android:color/holo_red_dark"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Log Out"
         android:textColor="@android:color/black"
@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_account_circle_24"
-        tools:srcCompat="@drawable/ic_baseline_account_circle_24" />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/frag_nama"

@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toStartOf="@+id/lbl_nama"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_lecturer_detail"
-        app:srcCompat="@drawable/ic_baseline_emoji_emotions_24" />
+        app:srcCompat="@drawable/ic_baseline_emoji_people_24" />
 
     <TextView
         android:id="@+id/lbl_nama"
@@ -105,7 +105,7 @@
         android:id="@+id/toolbar_lecturer_detail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@color/design_default_color_primary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
