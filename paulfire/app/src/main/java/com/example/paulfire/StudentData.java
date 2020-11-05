@@ -71,7 +71,7 @@ public class StudentData extends AppCompatActivity {
         position = intent.getIntExtra("position", 0);
         student = intent.getParcelableExtra("data_student");
         action = intent.getStringExtra("action");
-
+        //delete data
         if (action.equalsIgnoreCase("delete")) {
 
             new AlertDialog.Builder(StudentData.this)
@@ -114,7 +114,7 @@ public class StudentData extends AppCompatActivity {
                             }, 2000);
                         }
                     })
-
+                    //cancel delete data
                     .setNegativeButton("No", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -124,8 +124,7 @@ public class StudentData extends AppCompatActivity {
                     .create()
                     .show();
 
-//        layoutManager = new LinearLayoutManager(this);
-//        rv.setLayoutManager(layoutManager);
+
         }
 
 
@@ -141,7 +140,7 @@ public class StudentData extends AppCompatActivity {
             }
         });
     }
-
+    //list student
     public void fetchStudentData() {
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -168,35 +167,5 @@ public class StudentData extends AppCompatActivity {
         studentAdapter.setListStudent(list);
         rv.setAdapter(studentAdapter);
 
-//        ItemClickSupport.addTo(rv).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
-//            @Override
-//            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
-//                v.startAnimation(klik);
-//                Intent intent = new Intent(StudentData.this, LecturerDetail.class);
-//                Student student = new Student(list.get(position).getUid(), list.get(position).getEmail(), list.get(position).getPassword(), list.get(position).getName(), list.get(position).getNim(), list.get(position).getGender(), list.get(position).getAge(), list.get(position).getAddress());
-//                intent.putExtra("data_student", student);
-//                intent.putExtra("position", position);
-//                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(StudentData.this);
-//                startActivity(intent, options.toBundle());
-//                finish();
-//            }
-//        });
-    }
-
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        int id = item.getItemId();
-//        if (id == R.id.student_list) {
-//            Intent intent;
-//            intent = new Intent(StudentData.this, AddLecturer.class);
-//            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(StudentData.this);
-//            startActivity(intent, options.toBundle());
-//            finish();
-//            return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
 
 }

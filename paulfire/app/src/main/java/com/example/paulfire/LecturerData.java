@@ -46,8 +46,7 @@ public class LecturerData extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference("lecturer");
         rv = findViewById(R.id.rv_lect_data);
 
-//        layoutManager = new LinearLayoutManager(this);
-//        rv.setLayoutManager(layoutManager);
+
         fetchLecturerData();
 
 

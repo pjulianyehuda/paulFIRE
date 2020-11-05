@@ -111,7 +111,7 @@ public class AddCourse extends AppCompatActivity {
 
         btn_add = findViewById(R.id.button_add_course);
 
-        // ADD + EDIT PROCESS
+        //proses add dan edit
         Intent intent = getIntent();
         action = intent.getStringExtra("action");
         if (action.equals("add")){

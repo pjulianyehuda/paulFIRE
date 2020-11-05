@@ -46,7 +46,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="TextView"
-                android:textColor="@color/design_default_color_primary"
+                android:textColor="@android:color/background_dark"
                 android:textSize="24sp"
                 app:layout_constraintStart_toEndOf="@+id/enrollAdapterUserIcon"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -58,7 +58,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
-                android:textColor="@color/design_default_color_primary"
+                android:textColor="@android:color/background_dark"
                 app:layout_constraintStart_toEndOf="@+id/enrollAdapterUserIcon"
                 app:layout_constraintTop_toBottomOf="@+id/enrollAdapterName" />
 

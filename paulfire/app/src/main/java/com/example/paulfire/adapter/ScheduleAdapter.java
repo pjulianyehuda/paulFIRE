@@ -67,7 +67,7 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.CardVi
                 if (lecturerName !=null) {
                     holder.lbl_subject.setText(course.getSubject());
                     holder.lbl_subject.setText(course.getSubject());
-                    holder.lbl_schedule.setText(course.getDay() + ", " + course.getStart() + " - " + course.getEnd());
+                    holder.lbl_schedule.setText(course.getDay() + ", " + course.getStart() + " - " + course.getEnd()); //menampilkan schedule
                     holder.lbl_lecturer.setText(lecturerName.getValue());
                     holder.btn_delete.setOnClickListener(new View.OnClickListener() {
                         @Override

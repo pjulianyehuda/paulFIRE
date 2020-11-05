@@ -82,7 +82,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.CardView
             imageButton_edit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                    Log.d("tes", "masuk lagi di edit");
+//                    ("tes", "masuk di edit");
                     int position = getAdapterPosition();
                     Intent intent = new Intent(context, StudentRegister.class);
                     intent.putExtra("action", "edit");
@@ -95,7 +95,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.CardView
             imageButton_delete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                    Log.d("tes", "masuk lagi di delete");
+//                    ("tes", "masuk di delete");
                     int position = getAdapterPosition();
                     Intent intent = new Intent(context, StudentData.class);
                     intent.putExtra("action", "delete");
@@ -106,7 +106,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.CardView
             });
         }
 
-        //IF IT WORKS, IT WOKRS!!!!
+
         @Override
         public void onClick(View v) {
             onCardListener.onCardClick(getAdapterPosition());

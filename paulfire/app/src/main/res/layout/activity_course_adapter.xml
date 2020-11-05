@@ -25,7 +25,7 @@
                 android:layout_height="1dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginBottom="8dp"
-                android:background="@color/colorPrimary"
+                android:background="@color/design_default_color_primary"
                 app:layout_constraintBottom_toTopOf="@+id/labelSchedule"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +50,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
-                android:textColor="@color/design_default_color_primary"
+                android:textColor="@android:color/black"
                 app:layout_constraintStart_toEndOf="@+id/courseAdapterUserIcon"
                 app:layout_constraintTop_toBottomOf="@+id/courseAdapterName" />
 

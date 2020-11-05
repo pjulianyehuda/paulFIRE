@@ -32,7 +32,7 @@ public class StudentLogin extends AppCompatActivity implements TextWatcher {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_login);
 
-        //findViewById
+        //findViewById manggil id
         toolbar = findViewById(R.id.toolbar_StudentLogin);
         btn_login = findViewById(R.id.button_student_login);
         login_email = findViewById(R.id.login_email);
@@ -56,7 +56,7 @@ public class StudentLogin extends AppCompatActivity implements TextWatcher {
                 finish();
             }
         });
-
+        //untuk pengecekan
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -120,7 +120,7 @@
         android:background="@color/design_default_color_primary"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Add Course"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

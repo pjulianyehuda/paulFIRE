@@ -30,9 +30,7 @@ public class StudentMainActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar_StudentMain);
         button_logout = findViewById(R.id.button_logout);
-//
-//        mAuth = FirebaseAuth.getInstance();
-//        mUser = mAuth.getCurrentUser();
+
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
@@ -62,17 +60,6 @@ public class StudentMainActivity extends AppCompatActivity {
             return true;
         }
     };
-//
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        switch (item.getItemId()){
-//            case button:
-//                FirebaseAuth.getInstance().signOut();
-//                startActivity(new Intent(MainActivity.this, StartActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-//                return true;
-//        }
-//        return false;
-//    }
 
 
 }

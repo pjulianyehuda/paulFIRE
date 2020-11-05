@@ -88,11 +88,7 @@ public class AddLecturer extends AppCompatActivity implements TextWatcher {
         lecturer_name = lecturer_input_name.getEditText().getText().toString();
         lecturer_expertise = lecturer_input_expertise.getEditText().getText().toString();
 
-//        if (lecturer_gender.equalsIgnoreCase("Male")){
-//            lecturer_gender = "m";
-//        }else if(lecturer_gender.equalsIgnoreCase("Female")){
-//            lecturer_gender = "f";
-//        }
+
 
         Intent intent = getIntent();
         action = intent.getStringExtra("action");
